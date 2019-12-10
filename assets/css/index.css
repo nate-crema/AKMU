@@ -1,0 +1,92 @@
+body {
+    display: grid;
+    grid-template-rows: 900px 1200px 1000px 1000px 1500px auto;
+}
+
+
+.section {
+    border: 1px solid red;
+}
+.insec_cover {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid black; */
+}
+
+.title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.body-a {
+    height: 700px;
+    position: relative;
+    top: 100px;
+}
+.body-a .logo-img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 250px;
+    transform: translateY(-50%);
+}
+.body-a .text-area {
+    position: relative;
+    top: 300px;
+    font-weight: 200;
+    left: 10px;
+}
+.body-a .text-area .area-first {
+    position: absolute;
+    line-height: 0.7;
+    top: 20px;
+    color: #183863;
+    font-size: 26px;
+}
+.body-a .text-area .bar-divider {
+    width: 30px;
+    height: 5px;
+    background-color: #183863;
+    position: absolute;
+    top: 180px;
+}
+.body-a .text-area .album-info {
+    position: absolute;
+    top: 180px; 
+    font-size: 18px; 
+    color: #183863;      
+}
+
+
+.body-a .img-area {
+    position: absolute;
+    right: 0;
+    float: right;
+    width: 500px;
+    height: 100%;
+    background-color: white;
+}
+.body-a .img-area .main-img {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+.body-b {
+    height: 900px;
+    border: 1px solid black;
+    top: 1000px;
+    color: #183863;
+}
