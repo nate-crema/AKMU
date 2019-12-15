@@ -1,6 +1,7 @@
 body {
     display: grid;
-    grid-template-rows: 900px 1200px 1000px 1000px 1500px auto;
+    grid-template-rows: 900px 1200px 2400px 1500px auto;
+    overflow-x: hidden;
 }
 
 
@@ -9,7 +10,7 @@ body {
 }
 .insec_cover {
     position: absolute;
-    width: 80%;
+    width: 70%;
     left: 50%;
     transform: translateX(-50%);
     /* border: 1px solid black; */
@@ -84,9 +85,272 @@ body {
 
 
 
+.sec-b .background-text {
+    font-size: 520px;
+    font-weight: 700;
+    color: #183863;
+    z-index: -10;
+    opacity: 0.09;
+    position: absolute;
+    top: 870px;
+    left: -300px;
+}
+
+
+
+
+
+
+
 .body-b {
     height: 900px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     top: 1000px;
     color: #183863;
 }
+
+.body-b .img-area {
+    width: 400px;
+    height: 600px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 180px;
+    /* left: 80px; */
+}
+.body-b .img-area .intro-title, .ent-info {
+    position: absolute;
+    font-size: 20px;
+    z-index: 100;
+    left: 40px;
+}
+.body-b .img-area .intro-title {
+    font-size: 30px;
+    font-weight: 300;
+    top: 30px;
+}
+.body-b .img-area .ent-info {
+    top: 100px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.body-b .img-area .intro-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.body-b .text-area {
+    width: 500px;
+    height: 60%;
+    /* border: 1px solid black; */
+    right: 50px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.body-b .text-area .area-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+.body-b .text-area .area-subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.25;
+    position: absolute;
+    top: 70px;
+}
+.body-b .text-area .contents-a {
+    position: absolute;
+    top: 220px;
+    font-size: 16px;
+    font-weight: 200;
+    overflow: hidden;
+}
+.body-b .text-area .contents-b {
+    position: absolute;
+    top: 400px;
+    font-size: 16px;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.body-c {
+    height: 900px;
+    /* border: 1px solid black; */
+    top: 2300px;
+    color: #183863;
+}
+.body-c .LSH {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 100px;
+}
+.body-c .LSH .LSH_profile {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    float: right;
+}
+.body-c .LSH .profile {
+    text-align: left;
+}
+.body-c .LCH {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 1200px;
+}
+.body-c .LCH .LCH_profile {
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.body-c .LCH .profile {
+    text-align: left;
+}
+.body-c .LSH .profile {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    /* border: 1px solid black; */
+}
+.body-c .LCH .profile {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    top: 450px;
+    right: 50px;
+    /* border: 1px solid black; */
+}
+.body-c .profile .name {
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+}
+.body-c .profile .name-en {
+    font-size: 18px;
+    font-weight: 200;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    margin-top: 10px;
+}
+.body-c .profile .birth {
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    margin-top: 50px;
+}
+.body-c .profile .s-intro {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+
+
+.sec-c .LSH .background-text {
+    font-size: 450px;
+    font-weight: 700;
+    color: #183863;
+    z-index: -10;
+    opacity: 0.09;
+    position: absolute;
+    top: -570px;
+    right: -1450px;
+    white-space: nowrap;
+}
+
+.sec-c .LCH .background-text {
+    font-size: 450px;
+    font-weight: 700;
+    color: #183863;
+    z-index: -10;
+    opacity: 0.09;
+    position: absolute;
+    top: -460px;
+    left: -2050px;
+    white-space: nowrap;
+}
+
+
+
+
+.body-d .album-cover .album-section .square_album {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.body-d .album-cover {
+    width: 80%;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+.body-d .album-cover .album-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+/* media query */
+
+
+@media (max-width: 1300px) {
+    .title {
+        left: 150px;
+    } 
+    .insec_cover {
+        width: 100% !important;
+        overflow-y: hidden;
+    }
+
+
+    .body-b {
+        top: 900px !important;
+    }
+
+    .body-b .img-area {
+        /* top: -400px !important; */
+        width: 100% !important;
+    }
+    .body-b .img-area .intro-img {
+
+    }
+    .body-b .text-area {
+        position: absolute !important;
+        right: 0;
+        top: 450px;
+    }
+}
+
+
+

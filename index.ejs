@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>AKMU - Sullivan Project</title>
+</head>
+<body>
+    <div class="sec-a section">
+        <div class="body-a insec_cover">
+            <img class="logo-img" src="./assets/img/logo.png"/>
+            <div class="text-area">
+                <div class="area-first">
+                    <p class="a-text-a a-text">사회로 떠나는</p>
+                    <p class="a-text-b a-text">새로운 항해의 시작</p>
+                </div>
+                <div class="bar-divider"></div>
+                <p class="album-info">3집 [항해] 공개</p>
+            </div>
+            <div class="img-area">
+                <img class="main-img" src="./assets/img/AKMU_a.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="sec-b section">
+        <p class="background-text">AKMU</p>
+        <div class="body-b insec_cover">
+            <p class="title">Introduction</p>
+            <div class="img-area">
+                <p class="intro-title">AKMU (악동뮤지션)</p>
+                <p class="ent-info">YG Entertainment</p>
+                <img class="intro-img" src="./assets/img/AKMU_b.jpeg"/>
+            </div>
+            <div class="text-area">
+                <p class="area-title">진정한 싱어송라이터이자 듀엣</p>
+                <p class="area-subtitle">악동에서 성숙한 AKMU로</p>
+                <p class="contents-a">
+                    오빠 이찬혁과 여동생 이수현으로 이루어진 2인조 혼성 듀오이다.<br><br>
+                    2013년 ‘KPOP STAR 시즌 2’에서의 우승 이후, 2014년 대뷔앨범 ‘PLAY’를 통해<br>
+                    대중들에게 알려진 AKMU는 귀에 들어오는 가사와 노래로 대중들에게 큰 사랑을 받고 있다
+                </p>
+                <p class="contents-b">
+                        2년 2개월 만에 완전체로 컴백한 정규 앨범 [항해]는<br>
+                        그들이 성인이 된 후 처음 발매하는 앨범으로<br>
+                        ‘AKMU’ 앨범이라면 생소하게 느껴졌을 ‘이별’을 다루면서도<br>
+                        은유적으로 표현한 가사와 아에 대비되는 밴드 사운드를 기반으로 <br>
+                        자칫 무거울 수 있는 이별의 감성을 쿨하고 담백하게 풀어내고자 했다.
+                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="sec-c section">
+        <div class="body-c insec_cover">
+            <p class="title">Members</p>
+            <div class="LSH">
+                <p class="background-text">LEE Suhyun</p>
+                <img class="LSH_profile" src="./assets/img/optimize (2).jpeg">
+                <div class="profile">
+                    <p class="name">이수현</p>
+                    <p class="name-en">Lee SUHYUN</p>
+                    <p class="birth">1999.05.04</p>
+                    <p class="s-intro">신의 선물과 노력으로 만들어진<br> 최고의 목소리</p>
+                </div>
+            </div>
+            <div class="LCH">
+                <p class="background-text">LEE CHANHK</p>
+                <img class="LCH_profile" src="./assets/img/optimize (1).jpeg">
+                <div class="profile">
+                    <p class="name">이찬혁</p>
+                    <p class="name-en">Lee Chanhk</p>
+                    <p class="birth">1996.09.12</p>
+                    <p class="s-intro">그 누구도 따라갈 수 없는<br>최고의 싱어송라이터</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec-d section">
+        <div class="body-d insec_cover">
+            <p class="title">Albums</p>
+            <div class="album-cover">
+                <% for (var i = 1; i <= length; i++) { %>
+                    <% if (data[i].length != 0) {%>
+                        <div class="album-section">
+                            <% for (var j = 0; j < data[i].length; j++) { %>
+                                <div class="square_album">
+                                    <p><%= data[i][j].title%></p>
+                                </div>
+                            <% } %>
+                        </div>
+                    <% } %>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
